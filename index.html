@@ -13,7 +13,7 @@
               box-sizing: border-box;
             }
           </style>
-          <link rel="stylesheet" href="../styles.css" />
+          <!--<link rel="stylesheet" href="../styles.css" /> -->
         </head>
       
         <body>
@@ -30,15 +30,24 @@
           const para = document.createElement('p');
       
           // Add your code here
+          
 
 
-          function chooseName() {
-            const index = Math.floor(Math.random() * names.length);
+            const arfrm = names;
+            
+            function random() {
+                const digit = Math.floor(Math.random() * arfrm.length);
+                return digit;
+            }
 
-            return names[index];
-                        
+            function chooseName() {
+        
+            return names[random()];
+                    
 
             } 
+
+          
 
           para.textContent = chooseName(names);
       
