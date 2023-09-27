@@ -47,9 +47,18 @@
 
             } 
 
+            const short = names.filter(isShort);
+
+            function isShort(name) {
+                return name.length < 5;
+            }
+
+
+
+
           
 
-          para.textContent = chooseName(names);
+          para.textContent = short;
       
           // Don't edit the code below here!
       
